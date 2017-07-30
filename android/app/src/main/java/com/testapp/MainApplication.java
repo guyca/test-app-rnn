@@ -2,7 +2,6 @@ package com.testapp;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
-import com.facebook.soloader.SoLoader;
 import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.bridge.NavigationReactPackage;
 
@@ -26,11 +25,5 @@ public class MainApplication extends NavigationApplication {
                 new MainReactPackage(),
                 new NavigationReactPackage()
         );
-    }
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        SoLoader.init(this, /* native exopackage */ false);
     }
 }
